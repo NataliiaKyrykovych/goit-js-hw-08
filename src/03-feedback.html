@@ -2,30 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Promise generator</title>
+    <title>Feedback form</title>
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/03-feedback.css" />
   </head>
-
   <body>
-    <p><a a class="main-link" href="index.html">Go back</a></p>
+    <p><a class="main-link" href="index.html">Go back</a></p>
 
-    <form class="form">
+    <form class="feedback-form" autocomplete="off">
       <label>
-        <span>First delay (ms)</span>
-        <input type="number" name="delay" required />
+        Email
+        <input type="email" name="email" autofocus />
       </label>
       <label>
-        <span>Delay step (ms)</span>
-        <input type="number" name="step" required />
+        Message
+        <textarea name="message" rows="8"></textarea>
       </label>
-      <label>
-        <span>Amount</span>
-        <input type="number" name="amount" required />
-      </label>
-      <button type="submit">Create promises</button>
+      <button type="submit">Submit</button>
     </form>
 
-    <script src="js/03-promises.js" type="module"></script>
+    <script src="./js/03-feedback.js" type="module"></script>
   </body>
 </html>
